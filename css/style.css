@@ -206,6 +206,15 @@ body {
     transform: scale(0.95); 
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+}
+
 /* Styles for Weekly Reports */
 .border-start-4 {
     border-left-width: 4px !important;
