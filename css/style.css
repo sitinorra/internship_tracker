@@ -1,0 +1,269 @@
+/* Color Palette */
+:root {
+    --bg-black: #0b0c0d;      
+    --emerald-dark: #064e3b;  
+    --emerald-bright: #10b981;
+    --gold: #d4af37;          
+    --text-white: #f3f4f6;
+}
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Login Card Styling */
+.custom-card {
+    background-color: #161a1d;
+    border: 1px solid var(--emerald-dark);
+    border-radius: 12px;
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #b8962d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Form Inputs */
+.form-control {
+    background-color: #212529 !important;
+    border: 1px solid var(--emerald-dark) !important;
+    color: white !important;
+}
+
+.form-control:focus {
+    border-color: var(--emerald-bright) !important;
+    box-shadow: 0 0 0 0.25rem rgba(16, 185, 129, 0.25);
+}
+
+/* Make placeholder text visible on dark inputs */
+::placeholder {
+    color: #a0a0a0 !important;
+    opacity: 1; 
+}
+
+/* Hide placeholder immediately when the user clicks/focuses the input */
+.form-control:focus::placeholder {
+    color: transparent !important;
+}
+
+/* Ensure a smooth transition */
+.form-control::placeholder {
+    transition: color 0.2s ease;
+}
+
+/* Sidebar (For Dashboard) */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    background-color: #000;
+    border-right: 1px solid var(--emerald-dark);
+}
+
+/* Make muted text visible on dark background */
+.text-muted {
+    color: #a0a0a0 !important;
+}
+
+/* Dashboard Layout */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#content {
+    width: 100%;
+    padding: 40px;
+    min-height: 100vh;
+    margin-left: 250px; 
+    transition: all 0.3s;
+}
+
+/*Default state*/
+.sidebar .nav-link {
+    color: #f3f4f6 !important; 
+    text-decoration: none !important; 
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    border-left: 4px solid transparent;
+    transition: 0.3s;
+}
+
+/*Hover state*/
+.sidebar .nav-link:hover {
+    color: var(--emerald-bright) !important;
+    background-color: rgba(16, 185, 129, 0.1);
+    border-left: 4px solid var(--emerald-bright);
+}
+
+/*Active state*/
+.sidebar .nav-link.active {
+    color: var(--gold) !important;
+    background-color: rgba(6, 78, 59, 0.3); 
+    border-left: 4px solid var(--gold);
+}
+
+/*Summary Cards*/
+.stat-card {
+    background: linear-gradient(145deg, #161a1d, #0b0c0d);
+    border: 1px solid var(--emerald-dark);
+    border-left: 5px solid var(--gold);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--emerald-bright);
+}
+
+/* Chart Container */
+.chart-box {
+    background-color: #161a1d;
+    border: 1px solid var(--emerald-dark);
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+/* Responsive Sidebar Adjustment */
+@media (max-width: 768px) {
+    .sidebar { margin-left: -250px; }
+    #content { margin-left: 0; }
+}
+
+/*applications page*/
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.border-emerald {
+    border-color: var(--emerald-dark) !important;
+}
+
+/* Make table rows feel like they belong to the theme */
+.table-hover tbody tr:hover {
+    background-color: rgba(16, 185, 129, 0.05) !important;
+}
+
+/*companies page*/
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+    border-color: var(--emerald-bright) !important;
+}
+
+.btn-outline-emerald:hover {
+    background-color: var(--emerald-bright);
+    color: #000 !important;
+}
+
+.text-emerald {
+    color: var(--emerald-bright) !important;
+}
+
+/* Custom Button */
+.btn-custom-company {
+    background-color: transparent;
+    color: var(--emerald-bright); 
+    border: 2px solid #064e3b !important;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/* Hover State*/
+.btn-custom-company:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+    border-color: var(--emerald-bright) !important;
+    color: var(--emerald-bright);
+}
+
+/* Pressed State:*/
+.btn-custom-company:active, .btn-custom-company:focus {
+    background-color: var(--gold) !important;
+    border-color: var(--gold) !important;
+    color: #000 !important; 
+    transform: scale(0.95); 
+}
+
+/* Styles for Weekly Reports */
+.border-start-4 {
+    border-left-width: 4px !important;
+}
+
+.text-emerald {
+    color: var(--emerald-bright) !important;
+}
+
+#reportList .chart-box {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#reportList .chart-box:hover {
+    background-color: #1c2126;
+    border-color: var(--gold) !important;
+}
+
+/* Default: Dark Mode */
+:root {
+    --bg-main: #0a0a0a;
+    --bg-card: #141414;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --accent: #10b981;
+    --gold: #d4af37;
+}
+
+/* Light Mode */
+body.light-mode {
+    --bg-main: #cefad0 ;
+    --bg-card: #1a1a1a;
+    --text-main: #1a1a1a;
+    --text-muted: #a0a0a0;
+    --accent: #059669; 
+    --gold: #b8860b;   
+}
+
+/* Apply variables to the body */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Make sure cards use variables too */
+.stat-card, .chart-box, .card {
+    background-color: var(--bg-card) !important;
+    color: var(--text-main) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+body.light-mode .stat-card, body.light-mode .chart-box {
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.btn-outline-warning:hover{
+     background-color:#cefad0;
+}
