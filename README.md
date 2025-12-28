@@ -1,2 +1,2 @@
-# internship_tracker
+# Internship_Tracker
 IMS566 pairing project
