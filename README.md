@@ -63,4 +63,16 @@ git clone [https://github.com/sitinorra/internship_tracker.git](https://github.c
 
 The development of this system successfully provides a structured and user-friendly platform that addresses common student challenges like disorganized record-keeping. It demonstrates the practical application of advanced web development concepts and system design principles learned throughout the programme.
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=Internship+Tracker+Preview)
+![Register Page](./website_figures/registration_page.png)
+
+![Login Page](./website_figures/login_page.png)
+
+![Dashboard Page](./website_figures/dashboard1.png)
+
+![Dashboard Page](./website_figures/dashboard2.png)
+
+![Applications Page](./website_figures/applications_page.png)
+
+![Companies Page](./website_figures/companies_page.png)
+
+![Weekly Report Page](./website_figures/wekkly_report_page.png)
