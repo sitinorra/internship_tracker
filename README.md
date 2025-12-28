@@ -1,33 +1,66 @@
 # 🚀 Internship Tracker
 IMS566 pairing project
 
-A streamlined, web-based tool designed to help students and job seekers organize their internship search, track application statuses, and stay on top of deadlines.
+Internship Tracker Web Application System
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=Internship+Tracker+Preview) 
+The Internship Tracker Web Application System is a web-based interface designed to help students organize and monitor their internship activities more efficiently. It provides a centralized platform for logging applications, tracking progress, and managing weekly reports.
 
-## 📌 Overview
+👥 Prepared By
 
-Searching for internships can be chaotic. This project provides a centralized dashboard to log every application, company contact, and interview stage. Built with a focus on simplicity and user experience, it ensures no opportunity falls through the cracks.
+    Siti Nor Ra Binti Basri (2025121113) 
 
+    Nur Zulaikha Binti Md Sani (2025301403)
+
+Academic Context: This project was developed for IMS566: Advanced Web Design Development and Content Management at Universiti Teknologi MARA (UiTM), Puncak Perdana Campus, under the guidance of Dr. Hazila Binti Timan.
+
+✨ Features
+
+      Authentication Interface: Includes a simulated login and registration system with error handling for incorrect credentials.
+   
+      Interactive Dashboard: Features a summary of internship progress with data visualization elements like charts to track statuses and industry distribution.
+   
+      Application Management: A structured table to view application details such as company name, position, and current status.
+   
+      Company Tracking: Helps users keep track of potential or confirmed organizations offering placements.
+   
+      Weekly Progress Reports: Supports basic content management by organizing tasks and activities into systematic weekly entries.
+   
+      UI Customization: Includes a Light/Dark Mode toggle and a consistent navigation menu for a better user experience.
+   
+      Responsive Design: Developed using responsive principles to ensure functionality across desktop and mobile devices.
+
+🛠️ Frameworks & Libraries Used
+
+This system focuses on front-end development and is deployed via GitHub Pages.
+
+      HTML: Structure and content organization.
+
+      CSS: Interface styling and visual enhancement.
+
+      JavaScript: Client-side interactions and login validation logic.
+
+      Bootstrap 5: For a responsive, mobile-friendly layout.
+
+      Chart.js: For data visualization and dashboard charts.
+
+🚀 Testing Instructions
+
+To test the system functionality, visit the live demo: 
 **Live Demo:** [sitinorra.github.io/internship_tracker/](https://sitinorra.github.io/internship_tracker/)
 
-## ✨ Features
+      Test Login Credentials:
+      
+          Username: Sebastian Michaelis 
 
-- **Dashboard View:** A clean table interface to view all applications at a glance.
-- **Data Persistence:** Uses `localStorage` so your data stays saved even if you refresh the page or close the browser.
-- **Status Tracking:** Categorize applications by status (e.g., Applied, Interviewing, Rejected, Offer).
-- **Responsive Design:** Fully functional on desktops, tablets, and mobile devices.
-- **Fast & Lightweight:** Built with vanilla technologies—no heavy frameworks or slow loading times.
+          Password: Phantomhive
+      
+       Note: The registration interface is provided for demonstration purposes only, as the system currently uses simulated hardcoded credentials.
+       
+**Clone the repository:**
+git clone [https://github.com/sitinorra/internship_tracker.git](https://github.com/sitinorra/internship_tracker.git) 
 
-## 🛠️ Tech Stack
+📌 Conclusion
 
-- **HTML:** Semantic structure for better accessibility.
-- **CSS:** Custom styling with a focus on clean UI and responsiveness.
-- **JavaScript :** Logic for data handling, DOM manipulation, and local storage integration.
-- **GitHub Pages:** For seamless hosting and deployment.
+The development of this system successfully provides a structured and user-friendly platform that addresses common student challenges like disorganized record-keeping. It demonstrates the practical application of advanced web development concepts and system design principles learned throughout the programme.
 
-## 🚀 How to Use
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/sitinorra/internship_tracker.git](https://github.com/sitinorra/internship_tracker.git)
+![Project Screenshot](https://via.placeholder.com/800x400?text=Internship+Tracker+Preview)
